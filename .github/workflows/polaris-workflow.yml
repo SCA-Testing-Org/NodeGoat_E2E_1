@@ -27,7 +27,7 @@ jobs:
         with:
           polaris_server_url: ${{ vars.POLARIS_URL_POC }}
           polaris_access_token: ${{ secrets.POLARIS_ACCESS_TOKEN_POC }}
-          polaris_assessment_types: SCA,SAST
+          polaris_assessment_types: SAST,SCA
           polaris_waitForScan: true
           mark_build_status: success
           include_diagnostics: true
